@@ -24,11 +24,11 @@ int main(void)
 	}
 	else if (lastDigit <  5)
 	{
-	printf("and is less than 5  and greater then 0\n");
+	printf("and is less than 6 and not 0\n");
 	}
 	else
 	{
-	printf("and is equal to  0\n");
+	printf("and is 0\n");
 	}
 
 	return (0);
