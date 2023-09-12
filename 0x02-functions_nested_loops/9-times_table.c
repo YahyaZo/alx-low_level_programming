@@ -1,44 +1,37 @@
 #include "main.h"
 
 /**
- * times_table - Prints the 9 times table.
- *
- * Description: This function prints the multiplication table for the number 9,
- * starting from 0, up to 9 times 9.
+ * times_table - prints the 9 times table, starting with 0
  */
 void times_table(void)
 {
-	int row, column, product;
+	int row, column, k;
 
-	for (row = 0; row <= 9; row++)
+	for (row = 0; row < 10; row++)
 	{
-		for (column = 0; column <= 9; column++)
+		for (column = 0; column < 10; column++)
 		{
-			product = row * column;
-
+			k = column * row;
 			if (column == 0)
 			{
-				_putchar('0');
-			}
-			else if (product < 10)
-			{
-				_putchar(' ');	
-				_putchar(product + '0');
-			}
-			else
-			{
-				_putchar(' ');
-				_putchar((product / 10) + '0');
-				_putchar((product % 10) + '0');
+				_putchar(k + '0');
 			}
 
-			if (column != 9)
+			if (k < 10 && column != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
+				_putchar(k + '0');
+			} else if (k >= 10)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar((k / 10) + '0');
+				_putchar((k % 10) + '0');
 			}
 		}
-
 		_putchar('\n');
 	}
 }
+
