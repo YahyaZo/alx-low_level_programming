@@ -1,10 +1,13 @@
 #include "main.h"
 
 /*
- * _atoi - Entry point
- * @s: string input parameter
- * Description: convert a string to an integer
- * Return: converted integer from string
+ * _atoi - Converts a string to an integer
+ * @s: The input string to be converted
+ *
+ * Description: This function takes a string as input and converts it to an integer.
+ * If the string starts with a '-', it considers it as a negative number.
+ *
+ * Return: The converted integer from the string.
  */
 int _atoi(char *s)
 {
