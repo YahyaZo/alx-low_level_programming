@@ -7,7 +7,7 @@
  */
 int _sqrt_recursion(int n)
 {
-	return _sqrt(n, 1);
+	return (_sqrt(n, 1));
 }
 /**
  * _sqrt - Helper function to recursively find the square root.
@@ -34,6 +34,6 @@ int _sqrt(int n, int i)
 	{
 		return (-1);
 	}
-	return _sqrt(n, i + 1);
+	return (_sqrt(n, i + 1));
 }
 
