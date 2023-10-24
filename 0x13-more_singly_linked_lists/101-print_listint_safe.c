@@ -2,11 +2,11 @@
 
 /**
  * print_listint_safe - prints the elements in linked list
- * @h: head of listint_t type
+ * @head: head of listint_t type
  *
  * Return: size_t, number of nodes. Exits with 98 on failure
  */
-size_t print_listint_safe(const listint_t *h)
+size_t print_listint_safe(const listint_t *head)
 {
 	size_t n_nodes = 0;
 	const listint_t *temp_h = NULL, *loop_node = NULL;
